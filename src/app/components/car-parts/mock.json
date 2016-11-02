@@ -1,0 +1,45 @@
+{
+  "data": [
+    {
+      "id": 1,
+      "name": "Super Tires2",
+      "about": "Bla bla bla",
+      "inStock": 30,
+      "entryFee": 3.99,
+      "quantity": 0,
+      "image": "https://a2ua.com/small/small-006.jpg",
+      "featured": true,
+      "isRacing": true
+    }, {
+      "id": 2,
+      "name": "Super Tires3",
+      "about": "Bla bla bla",
+      "inStock": 10,
+      "entryFee": 4.99,
+      "quantity": 0,
+      "image": "https://a2ua.com/small/small-006.jpg",
+      "featured": true,
+      "isRacing": true
+    }, {
+      "id": 3,
+      "name": "Super Tires1",
+      "about": "Bla bla bla",
+      "inStock": 20,
+      "entryFee": 5.99,
+      "quantity": 0,
+      "image": "https://a2ua.com/small/small-006.jpg",
+      "featured": true,
+      "isRacing": false
+    }, {
+      "id": 4,
+      "name": "Super Tires4",
+      "about": "Bla bla bla",
+      "inStock": 0,
+      "entryFee": 6.99,
+      "quantity": 0,
+      "image": "https://a2ua.com/small/small-006.jpg",
+      "featured": true,
+      "isRacing": false
+    }
+  ]
+ }

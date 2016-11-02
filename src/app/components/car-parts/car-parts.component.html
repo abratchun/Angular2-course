@@ -1,0 +1,45 @@
+<main class="container" role="main">
+  <!--<h2>Cash left to enter races: <span>{{cashLeft() | currency:'USD':true}}</span> </h2>-->
+  <ul>
+    <li class="card" *ngFor="let carPart of carParts" [class.featured]="carPart.featured"  >
+      <div class="panel-body">
+        <div class="photo">
+          <img [src]="carPart.image">
+        </div>
+        <table class="race-info">
+          <tr>
+            <td>
+              <h3>{{carPart.name}}</h3>
+              <p class="date">{{carPart.date | date:'MMM d, y, h:MM a'}}</p>
+              <p class="description">{{carPart.about}}</p>
+            </td>
+            <td class="price">
+              {{carPart.entryFee | currency:'USD':true}}
+            </td>
+            <td>
+              <div>
+                <button class="increase" (click)="downQuatity(carPart)">-</button>
+                <input class="number" type="text" [(ngModel)]="carPart.quantity">
+                <button class="increase" (click)="upQuatity(carPart)">+</button>
+              </div>
+            </td>
+            <td>
+              {{carPart.inStock}} in Stock
+            </td>
+            <td>
+              <button class="button" *ngIf="!carPart.isRacing">Enter Race</button>
+              <div *ngIf="carPart.isRacing">
+                <p class="status">Racing</p>
+                <button class="button-cancel">Cancel Race</button>
+              </div>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </li>
+  </ul>
+  <div class="price-total">
+    <h3>Total cost:</h3>
+    <p>{{totalCost() | currency:'USD':true}}</p>
+  </div>
+</main>
